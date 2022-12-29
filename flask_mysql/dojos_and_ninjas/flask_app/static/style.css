@@ -1,0 +1,94 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #eeeeee;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    width:50%;
+    margin: 20px auto;
+}
+
+.container2 {
+    width: 30%;
+    margin:20px auto;
+}
+
+form {
+    background-color: #252525;
+    color: white;
+    padding:20px;
+}
+
+h1 {
+    color: #c70202;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+}
+
+input{
+    padding:10px;
+    width:100%
+}
+
+select {
+    padding: 10px;
+    width:100%;
+}
+
+button {
+    padding:10px;
+    background-color: #c70202;
+    display: block;
+    margin-top: 10px;
+}
+
+.dojos {
+    background-color: #252525;
+    color: white;
+    padding:20px;
+}
+
+li{
+    list-style: none;
+}
+
+a {
+    color: #c70202;
+    text-decoration: none;
+    text-align: center;
+}
+
+p {
+    margin: 10px 0;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding:10px;
+}
+
+table {
+    width:100%;
+}
+
+th, tr:nth-child(even) {
+    background-color: #fff;
+}
