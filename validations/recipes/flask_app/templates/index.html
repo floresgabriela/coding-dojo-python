@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Recipe Share</title>
+</head>
+<body>
+    
+    <h1>Recipe Share</h1>
+
+    <main>
+        <div id="left">
+            <form action="/register" method="POST">
+
+                {% with messages = get_flashed_messages(category_filter = 'register') %}
+                    {% if messages %}
+                        {% for message in messages %}
+                            <p style ="color:red">{{message}}</p>
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %}
+
+                <h1>Register</h1>
+                <label>First Name:</label>
+                <input name="first_name" type="text">
+                <label>Last Name:</label>
+                <input name="last_name" type="text">
+                <label>Email:</label>
+                <input name="email" type="text">
+                <label>Password:</label>
+                <input name="password" type="password">
+                <label>Confirm Password:</label>
+                <input name="confirm_password" type="password">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        
+        <div id="right">
+            <form action="/login" method="POST">
+
+                {% with messages = get_flashed_messages(category_filter = 'login') %}
+                    {% if messages %}
+                        {% for message in messages %}
+                            <p style ="color:red">{{message}}</p>
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %}
+
+                <h1>Login</h1>
+                <label>Email:</label>
+                <input name="email" type="text">
+                <label>Password:</label>
+                <input name="password" type="password">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+
+</body>
+</html>

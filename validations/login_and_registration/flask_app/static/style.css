@@ -1,0 +1,40 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 80%;
+    margin: 20px auto;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+form {
+    background-color: #252525;
+    color: white;
+    padding:20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+}
+
+input{
+    padding:10px;
+    width:100%
+}
+
+select {
+    padding: 10px;
+    width:100%;
+}
+
+button {
+    padding:10px;
+    background-color: #0278c7;
+    display: block;
+    margin-top: 10px;
+}
