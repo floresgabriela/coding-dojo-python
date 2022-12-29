@@ -1,0 +1,15 @@
+body {
+    font-family: sans-serif;
+}
+
+button {
+    padding: 15px;
+}
+
+#add {
+    background-color: peachpuff;
+}
+
+#reset {
+    background-color: palegreen;
+}
